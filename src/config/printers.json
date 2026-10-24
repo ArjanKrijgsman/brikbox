@@ -1,0 +1,12 @@
+[
+  { "id": "bambu-a1-mini", "name": "Bambu Lab A1 mini", "buildVolume": [180, 180, 180], "multicolor": true, "verified": false },
+  { "id": "bambu-a1", "name": "Bambu Lab A1", "buildVolume": [256, 256, 256], "multicolor": true, "verified": false },
+  { "id": "bambu-p1s", "name": "Bambu Lab P1S", "buildVolume": [256, 256, 256], "multicolor": true, "verified": false },
+  { "id": "bambu-x1c", "name": "Bambu Lab X1-Carbon", "buildVolume": [256, 256, 256], "multicolor": true, "verified": false },
+  { "id": "bambu-h2d", "name": "Bambu Lab H2D", "buildVolume": [325, 320, 325], "multicolor": true, "verified": false },
+  { "id": "prusa-core-one", "name": "Prusa Core One", "buildVolume": [250, 220, 270], "multicolor": false, "verified": false },
+  { "id": "prusa-xl", "name": "Prusa XL", "buildVolume": [360, 360, 360], "multicolor": true, "verified": false },
+  { "id": "creality-k2-plus", "name": "Creality K2 Plus", "buildVolume": [350, 350, 350], "multicolor": true, "verified": false },
+  { "id": "creality-ender-3-v3", "name": "Creality Ender-3 V3", "buildVolume": [220, 220, 250], "multicolor": false, "verified": false },
+  { "id": "voron-2.4-350", "name": "Voron 2.4 (350)", "buildVolume": [350, 350, 340], "multicolor": false, "verified": false }
+]

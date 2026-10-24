@@ -1,0 +1,18 @@
+node_modules/
+dist/
+coverage/
+*.local
+.vite/
+
+# Gegenereerde printbestanden
+*.stl
+*.3mf
+!test-prints/**/*.stl
+!test-prints/**/*.3mf
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
