@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "description": "Webapp die modulaire, afsluitbare en stapelbare opbergdozen voor brikken (bouwsteentjes) genereert als STL/3MF.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",

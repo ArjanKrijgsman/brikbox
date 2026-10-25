@@ -38,3 +38,9 @@ Voeg één regel toe aan [src/config/printers.json](src/config/printers.json) me
 ## Thema's en merken
 
 Gebruik geen merknamen in de app of de repository en lever geen beschermde logo's van speelgoed-, game- of filmmerken mee. Gebruikers kunnen voor eigen gebruik hun eigen SVG uploaden in de app.
+
+## Licentie
+
+- **Code:** [MIT](LICENSE)
+- **Ontwerpen en documentatie** (`docs/`, `themes/`, `test-prints/`): [CC BY 4.0](LICENSE-DESIGNS.md)
+- **Wat je zelf met de app genereert, is van jou:** printen, delen en verkopen mag zonder beperkingen.

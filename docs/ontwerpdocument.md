@@ -368,8 +368,9 @@ Geometrie is goed automatisch te testen (vitest):
 
 ### 12.3 Licentie
 
-- Code: **MIT** (of GPL-3.0 als je wilt dat afgeleide werken open blijven).
-- Gegenereerde modellen en meegeleverde thema-iconen: **CC BY-SA 4.0** of CC BY.
+- Code: **MIT** ([LICENSE](../LICENSE)).
+- Ontwerpen en documentatie (`docs/`, `themes/`, `test-prints/`): **CC BY 4.0** ([LICENSE-DESIGNS.md](../LICENSE-DESIGNS.md)).
+- Bestanden die gebruikers met de app genereren zijn van henzelf: printen, delen en verkopen mag zonder beperkingen.
 - Geen merknamen in README of app, dus ook geen handelsmerk-disclaimer nodig.
 
 ## 13. Wat ook nog handig kan zijn
@@ -406,12 +407,13 @@ Geometrie is goed automatisch te testen (vitest):
 | B1 | Referentieprinter | Bambu Lab X1-Carbon met AMS; app ondersteunt alle printers, klein t/m zeer groot (§9.1) |
 | B2 | Compatibel met de bestaande opbergdozen? | Nee, die zijn alleen inspiratie; eigen raster en maten |
 | B3 | Naam | **BrikBox**; geen merknamen, overal "brik(ken)" |
+| B4 | Repository | Openbaar: github.com/ArjanKrijgsman/brikbox, app op arjankrijgsman.github.io/brikbox |
+| B5 | Licentie | Code MIT, ontwerpen CC BY 4.0, gegenereerde bestanden vrij (§12.3) |
 
 **Nog open**
 
 1. **Raster op buitenmaat** (stapelen in verband) of **binnenmaat** (Gridfinity)? Voorstel: buitenmaat.
 2. Voorkeur voor **sluiting**: klapgreep (voorstel), draaigrendel of schuifdeksel?
-3. Repository **openbaar of privé**, en welke licentie?
 
 ## 16. Risico's
 
