@@ -1,6 +1,6 @@
-# NopBox
+# BrikBox
 
-Webapp die **modulaire, afsluitbare en stapelbare opbergdozen voor LEGO®-steentjes** genereert als STL/3MF. Kies maat, indeling en thema; onderdelen die groter zijn dan je printbed worden automatisch gesplitst in stukken die in elkaar klikken.
+Webapp die **modulaire, afsluitbare en stapelbare opbergdozen voor brikken (bouwsteentjes)** genereert als STL/3MF. Kies maat, indeling en thema; onderdelen die groter zijn dan je printbed worden automatisch gesplitst in stukken die in elkaar klikken.
 
 > Status: in aanbouw. Het volledige ontwerp staat in [docs/ontwerpdocument.md](docs/ontwerpdocument.md).
 
@@ -37,8 +37,4 @@ Voeg één regel toe aan [src/config/printers.json](src/config/printers.json) me
 
 ## Thema's en merken
 
-Lever geen beschermde logo's (LEGO, Nintendo, Lucasfilm, …) mee in deze repository. Gebruikers kunnen voor eigen gebruik hun eigen SVG uploaden in de app.
-
----
-
-LEGO® is een handelsmerk van de LEGO Group, die dit project niet sponsort of goedkeurt.
+Gebruik geen merknamen in de app of de repository en lever geen beschermde logo's van speelgoed-, game- of filmmerken mee. Gebruikers kunnen voor eigen gebruik hun eigen SVG uploaden in de app.

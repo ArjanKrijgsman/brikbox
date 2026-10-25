@@ -1,8 +1,8 @@
 {
-  "name": "nopbox",
+  "name": "brikbox",
   "private": true,
   "version": "0.0.0",
-  "description": "Webapp die modulaire, afsluitbare en stapelbare opbergdozen voor LEGO®-steentjes genereert als STL/3MF.",
+  "description": "Webapp die modulaire, afsluitbare en stapelbare opbergdozen voor brikken (bouwsteentjes) genereert als STL/3MF.",
   "type": "module",
   "scripts": {
     "dev": "vite",

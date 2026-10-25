@@ -1,6 +1,6 @@
-# NopBox — modulair, afsluitbaar en stapelbaar opbergsysteem voor LEGO®-steentjes
+# BrikBox — modulair, afsluitbaar en stapelbaar opbergsysteem voor brikken
 
-> **Werktitel:** NopBox ("nop" = stud) · **Status:** concept v0.2 · **Datum:** 25-10-2026
+> **Naam:** BrikBox · **Status:** concept v0.3 · **Datum:** 25-10-2026
 >
 > Dit document beschrijft het systeem (de fysieke dozen) én de webapp die de printbestanden genereert. Het is de basis voor de latere Git-repository.
 
@@ -8,7 +8,7 @@
 
 ## 1. Aanleiding
 
-De bekende LEGO-opbergdozen (geel/rood, deksel met 8 noppen, handgrepen aan de korte kanten) zijn mooi en stapelbaar, maar:
+De bekende opbergdozen in de vorm van een grote brik (geel/rood, deksel met 8 noppen, handgrepen aan de korte kanten) zijn mooi en stapelbaar, maar:
 
 - **Het deksel ligt los.** Optillen aan de handgreep = deksel blijft liggen of valt eraf. Niet geschikt voor transport.
 - **De indeling is vast.** Via MakerWorld bestaat een inzet met 8 vakken; een versie met 4 vakken is zelf gemaakt. Wens: ook 2 vakken, en vrij combineren ("1 groot + 4 klein", zoals in de gele doos).
@@ -16,7 +16,7 @@ De bekende LEGO-opbergdozen (geel/rood, deksel met 8 noppen, handgrepen aan de k
 
 De bestaande dozen zijn **alleen inspiratie**: het nieuwe systeem hoeft er niet mee compatibel te zijn en heeft zijn eigen maten.
 
-**Doel:** een eigen, 3D-printbaar systeem dat de look van een LEGO-steen houdt, maar afsluitbaar, modulair en volledig aanpasbaar is — met een webapp die de STL/3MF-bestanden maakt, ook als de doos groter is dan je printbed.
+**Doel:** een eigen, 3D-printbaar systeem dat de look van een brik houdt, maar afsluitbaar, modulair en volledig aanpasbaar is — met een webapp die de STL/3MF-bestanden maakt, ook als de doos groter is dan je printbed.
 
 ## 2. Doelen en niet-doelen
 
@@ -34,7 +34,7 @@ De bestaande dozen zijn **alleen inspiratie**: het nieuwe systeem hoeft er niet 
 **Niet-doelen (voorlopig)**
 
 - Geen spuitgieten of massaproductie.
-- Geen officieel LEGO-product; LEGO-namen/logo's worden niet in het project meegeleverd (zie §7.4).
+- Geen officieel product van een speelgoedmerk; merknamen en logo's worden niet in het project gebruikt of meegeleverd (zie §7.4).
 - Geen accounts/database; configuraties worden gedeeld via een link of JSON-bestand.
 
 ## 3. Onderdelen in één oogopslag
@@ -61,7 +61,7 @@ Alles in het systeem is opgebouwd uit **rastercellen**. Zo passen dozen van vers
 | Breedte / diepte | `n × R − 0,5 mm` | Buitenmaat; 0,5 mm speling zodat dozen naast elkaar passen |
 | Hoogte-eenheid | 7 mm | Hoogte van de bak in stappen van 7 mm (ook Gridfinity) |
 | Noppenraster | 2 R = 84 mm | 1 nop per 2×2 cellen → een 8×4-doos krijgt 4×2 = 8 noppen, net als het origineel |
-| Nopdiameter | 0,6 × 84 ≈ 50 mm | Zelfde verhouding als een echte LEGO-nop (4,8 / 8,0) |
+| Nopdiameter | 0,6 × 84 ≈ 50 mm | Zelfde verhouding als de nop van een gewone brik (4,8 / 8,0) |
 
 **Voorbeeldmaten**
 
@@ -80,7 +80,7 @@ Even aantallen cellen worden aangeraden (anders valt er een halve nop weg). De a
 |---|---|---|
 | Stapelen in verband | ✅ Ja, dozen tegen elkaar = exact op raster | ❌ Wanddikte verstoort het raster |
 | Gridfinity-bakjes erin | ⚠️ Net niet (binnen ≈ n·42 − 5 mm) | ✅ Exact n×n bakjes |
-| LEGO-gevoel | ✅ | — |
+| Brik-gevoel | ✅ | — |
 
 Voorstel: standaard **buitenmaat**, met een schakelaar "Gridfinity-binnenmaat" voor wie dat liever heeft.
 
@@ -89,7 +89,7 @@ Voorstel: standaard **buitenmaat**, met een schakelaar "Gridfinity-binnenmaat" v
 - **Noppen op het deksel** steken in **ringvormige groeven in de bodem** van de doos erboven. Een ringgroef (ca. 4 mm breed) is zonder support te printen, een volledig gat van 50 mm niet netjes.
 - Omdat het noppenraster overal hetzelfde is, kun je **in verband stapelen**: een 8×4-doos op twee 4×4-dozen, of verschoven met een halve doos.
 - **Nophoogte** is instelbaar: ca. 5 mm grijpt in de groef, de rest is zichtbaar (standaard 10 mm zichtbaar, zoals op de foto).
-- **Draagvermogen:** een volle doos LEGO weegt al snel 3–4 kg. Het gewicht gaat via de noppen naar het deksel; de **ribben onder het deksel** liggen precies onder de noppen en verdelen de last naar de wanden.
+- **Draagvermogen:** een volle doos brikken weegt al snel 3–4 kg. Het gewicht gaat via de noppen naar het deksel; de **ribben onder het deksel** liggen precies onder de noppen en verdelen de last naar de wanden.
 - **Waarom losse noppen?** Het deksel wordt ondersteboven geprint (gladde bovenkant, lip en ribben naar boven). Noppen eraan vast zouden dan in de lucht hangen. Losse noppen lossen dat op én geven extra mogelijkheden: wisselbare kleuren (kleurcodering per inhoud!), thema-noppen, kapotte nop = alleen nop herprinten.
 
 ## 6. Deksel en sluiting
@@ -104,7 +104,7 @@ Voorstel: standaard **buitenmaat**, met een schakelaar "Gridfinity-binnenmaat" v
 | Optie | Hoe | Plus | Min |
 |---|---|---|---|
 | **A. Klapgreep** *(aanbevolen)* | Greep scharniert aan de korte zijwand, klapt omhoog over de dekselrand en klikt vast | Greep + slot + themadrager in één; robuust; vertrouwd (zoals een Really Useful Box) | Scharnier nodig (filament-pen) |
-| **B. Draaigrendel** | Een nop-vormige knop op het deksel; een kwartslag draait een nok onder een richel in de bak | Ziet eruit als een nop; erg "LEGO" | Lastiger te printen, minder kracht |
+| **B. Draaigrendel** | Een nop-vormige knop op het deksel; een kwartslag draait een nok onder een richel in de bak | Ziet eruit als een nop; erg "brik" | Lastiger te printen, minder kracht |
 | **C. Schuifdeksel** | Deksel schuift via zwaluwstaartrails in de bak, klikt aan het eind vast | Zeer stevig, geen losse delen | Bij stapelen moet je de doos eruit halen om te openen |
 | **D. Los** | Zoals het origineel | Simpel | Niet voor transport |
 
@@ -149,9 +149,9 @@ Het embleem is een los plaatje (standaard ca. 50 × 30 mm, schaalt mee met de gr
 
 ### 7.4 Merken en rechten — belangrijk voor de Git-repo
 
-- "LEGO", "Mario", "Star Wars" en hun logo's zijn merken/auteursrechtelijk beschermd. **Voor eigen gebruik prima**, maar:
+- Namen en logo's van speelgoed-, game- en filmmerken (zoals "Mario" en "Star Wars") zijn merken/auteursrechtelijk beschermd. **Voor eigen gebruik prima**, maar:
   - Lever die logo's **niet** mee in de repository of in een openbare themagalerij.
-  - Gebruik "LEGO" niet in de projectnaam; beschrijvend mag ("geschikt voor LEGO®-steentjes").
+  - Gebruik geen merknamen in de projectnaam, de app of de README. Daarom heet het systeem BrikBox en spreken we overal van "brikken".
   - Bij publicatie op MakerWorld/Printables: zonder beschermde logo's.
 - Daarom het SVG-upload-principe: de gebruiker brengt zijn eigen thema mee.
 
@@ -326,7 +326,7 @@ flowchart LR
 ### 11.5 Inhoud van de download
 
 ```
-nopbox-8x4x20/
+brikbox-8x4x20/
 ├── platen/                 # één 3MF per printbed, onderdelen al ingedeeld
 ├── onderdelen/             # elk onderdeel apart als STL
 ├── handleiding.html        # montagevolgorde, onderdeel-ID's, benodigdheden
@@ -339,7 +339,7 @@ nopbox-8x4x20/
 ### 12.1 Voorgestelde structuur
 
 ```
-nopbox/
+brikbox/
 ├── src/
 │   ├── config/        # zod-schema, presets, printers.json
 │   ├── geometry/      # generatoren: box, lid, stud, latch, divider, badge, joints
@@ -370,13 +370,13 @@ Geometrie is goed automatisch te testen (vitest):
 
 - Code: **MIT** (of GPL-3.0 als je wilt dat afgeleide werken open blijven).
 - Gegenereerde modellen en meegeleverde thema-iconen: **CC BY-SA 4.0** of CC BY.
-- Disclaimer in de README: *"LEGO® is een handelsmerk van de LEGO Group, die dit project niet sponsort of goedkeurt."*
+- Geen merknamen in README of app, dus ook geen handelsmerk-disclaimer nodig.
 
 ## 13. Wat ook nog handig kan zijn
 
 - **Tolerantie-testprint** *(heel belangrijk, eerst doen)*: klein proefstuk met nop + groef, schuifgleuf, scharnier, klik en zwaluwstaart in verschillende toleranties. Eerst afstellen, dan pas de grote doos van 10 uur printen.
 - **Instructieboekjesvak** onder het deksel: bouwinstructies gaan mee met de set.
-- **Bouwplaat-deksel**: een deksel met echte LEGO-compatibele noppen (8 mm raster) om op te bouwen. Lastig te printen (precisie); als optie met eigen tolerantie-instelling.
+- **Bouwplaat-deksel**: een deksel met noppen op het gewone brik-formaat (8 mm raster), zodat je er brikken op kunt bouwen. Lastig te printen (precisie); als optie met eigen tolerantie-instelling.
 - **Labels**: een inschuifvak aan de lange kant voor een geprint labelplaatje of papiertje; optioneel een **QR-code** in reliëf die naar een lijst met inhoud linkt (bijv. een Rebrickable-set of eigen lijst).
 - **Kleurcodering met noppen**: rode noppen = Technic, gele = City, … — zie je meteen in de kast.
 - **Koppelclips** om dozen naast elkaar aan elkaar te klikken.
@@ -404,14 +404,14 @@ Geometrie is goed automatisch te testen (vitest):
 | # | Vraag | Besluit |
 |---|---|---|
 | B1 | Referentieprinter | Bambu Lab X1-Carbon met AMS; app ondersteunt alle printers, klein t/m zeer groot (§9.1) |
-| B2 | Compatibel met bestaande LEGO-dozen? | Nee, die zijn alleen inspiratie; eigen raster en maten |
+| B2 | Compatibel met de bestaande opbergdozen? | Nee, die zijn alleen inspiratie; eigen raster en maten |
+| B3 | Naam | **BrikBox**; geen merknamen, overal "brik(ken)" |
 
 **Nog open**
 
 1. **Raster op buitenmaat** (stapelen in verband) of **binnenmaat** (Gridfinity)? Voorstel: buitenmaat.
 2. Voorkeur voor **sluiting**: klapgreep (voorstel), draaigrendel of schuifdeksel?
-3. **Naam** van het project: NopBox, BrikBox, StudStack, of iets anders?
-4. Repository **openbaar of privé**, en welke licentie?
+3. Repository **openbaar of privé**, en welke licentie?
 
 ## 16. Risico's
 
@@ -422,7 +422,7 @@ Geometrie is goed automatisch te testen (vitest):
 | Gesplitste bak minder stijf | Naad kraakt/opent | Zwaluwstaarten + verspringende naden; optioneel lijm |
 | Grote bodem trekt krom (warping) | Doos wiebelt | Afgeronde hoeken, brim-advies, PETG/PLA i.p.v. ABS |
 | Genereren te traag in de browser | Slechte ervaring | Web Worker, lage-resolutie preview, volledige kwaliteit pas bij export |
-| Merkrechten (LEGO, Nintendo, Disney) | Klacht bij publicatie | Geen beschermde logo's in repo; gebruiker uploadt eigen SVG |
+| Merkrechten (speelgoed-, game- en filmmerken) | Klacht bij publicatie | Geen beschermde logo's in repo; gebruiker uploadt eigen SVG |
 
 ---
 
@@ -430,6 +430,7 @@ Geometrie is goed automatisch te testen (vitest):
 
 | Begrip | Betekenis |
 |---|---|
+| Brik | Bouwsteentje met noppen; ook de vorm waar de doos op lijkt |
 | Rastercel | Basismaat van 42 × 42 mm waarop alles is gebaseerd |
 | Nop | Ronde uitsteeksel op het deksel (stud) |
 | Schot | Losse tussenwand (divider) |
