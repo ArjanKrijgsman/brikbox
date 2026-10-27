@@ -1,6 +1,6 @@
 # BrikBox — modulair, afsluitbaar en stapelbaar opbergsysteem voor brikken
 
-> **Naam:** BrikBox · **Status:** concept v0.3 · **Datum:** 25-10-2026
+> **Naam:** BrikBox · **Status:** concept v0.4 · **Datum:** 27-10-2026
 >
 > Dit document beschrijft het systeem (de fysieke dozen) én de webapp die de printbestanden genereert. Het is de basis voor de latere Git-repository.
 
@@ -82,7 +82,7 @@ Even aantallen cellen worden aangeraden (anders valt er een halve nop weg). De a
 | Gridfinity-bakjes erin | ⚠️ Net niet (binnen ≈ n·42 − 5 mm) | ✅ Exact n×n bakjes |
 | Brik-gevoel | ✅ | — |
 
-Voorstel: standaard **buitenmaat**, met een schakelaar "Gridfinity-binnenmaat" voor wie dat liever heeft.
+**Besloten (B6): raster op buitenmaat.** Een schakelaar "Gridfinity-binnenmaat" kan later als optie in de app komen.
 
 ## 5. Stapelen
 
@@ -103,10 +103,12 @@ Voorstel: standaard **buitenmaat**, met een schakelaar "Gridfinity-binnenmaat" v
 
 | Optie | Hoe | Plus | Min |
 |---|---|---|---|
-| **A. Klapgreep** *(aanbevolen)* | Greep scharniert aan de korte zijwand, klapt omhoog over de dekselrand en klikt vast | Greep + slot + themadrager in één; robuust; vertrouwd (zoals een Really Useful Box) | Scharnier nodig (filament-pen) |
+| **A. Klapgreep** *(gekozen, B7)* | Greep scharniert aan de korte zijwand, klapt omhoog over de dekselrand en klikt vast | Greep + slot + themadrager in één; robuust; vertrouwd (zoals een Really Useful Box) | Scharnier nodig (filament-pen) |
 | **B. Draaigrendel** | Een nop-vormige knop op het deksel; een kwartslag draait een nok onder een richel in de bak | Ziet eruit als een nop; erg "brik" | Lastiger te printen, minder kracht |
 | **C. Schuifdeksel** | Deksel schuift via zwaluwstaartrails in de bak, klikt aan het eind vast | Zeer stevig, geen losse delen | Bij stapelen moet je de doos eruit halen om te openen |
 | **D. Los** | Zoals het origineel | Simpel | Niet voor transport |
+
+**Besloten (B7): klapgreep (optie A) is de standaardsluiting.** De draaigrendel kan later als extra optie in de app komen.
 
 ### 6.3 Klapgreep in detail (optie A)
 
@@ -409,11 +411,12 @@ Geometrie is goed automatisch te testen (vitest):
 | B3 | Naam | **BrikBox**; geen merknamen, overal "brik(ken)" |
 | B4 | Repository | Openbaar: github.com/ArjanKrijgsman/brikbox, app op arjankrijgsman.github.io/brikbox |
 | B5 | Licentie | Code MIT, ontwerpen CC BY 4.0, gegenereerde bestanden vrij (§12.3) |
+| B6 | Raster | Op **buitenmaat**: dozen stapelen in verband; Gridfinity-binnenmaat eventueel later als optie (§4) |
+| B7 | Sluiting | **Klapgreep**: greep, slot en embleemdrager in één; draaigrendel eventueel later als optie (§6) |
 
 **Nog open**
 
-1. **Raster op buitenmaat** (stapelen in verband) of **binnenmaat** (Gridfinity)? Voorstel: buitenmaat.
-2. Voorkeur voor **sluiting**: klapgreep (voorstel), draaigrendel of schuifdeksel?
+Geen open ontwerpvragen meer. Volgende stap: fase 0, de tolerantie-testprint op de X1C (§13, §14).
 
 ## 16. Risico's
 
