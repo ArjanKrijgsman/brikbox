@@ -13,7 +13,12 @@ npm install
 npm run dev        # ontwikkelserver op http://localhost:5173
 npm test           # tests (vitest)
 npm run build      # typecheck + productiebuild in dist/
+npm run testprint  # tolerantie-testprint opnieuw genereren in test-prints/
 ```
+
+## Tolerantie-testprint
+
+Print eerst de proefstukken in [test-prints/](test-prints/README.md) om de passingen op jouw printer af te stellen.
 
 ## Structuur
 
@@ -26,7 +31,8 @@ src/
 ├── worker/    # web worker voor het rekenwerk
 └── ui/        # React-componenten
 themes/        # alleen eigen/vrije thema-iconen (SVG)
-test-prints/   # tolerantie-testprint
+scripts/       # generatoren die vanaf de commandoregel draaien
+test-prints/   # tolerantie-testprint (3MF + STL)
 docs/          # ontwerpdocument en handleidingen
 tests/         # vitest
 ```

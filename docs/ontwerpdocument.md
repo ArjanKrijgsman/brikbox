@@ -393,7 +393,7 @@ Geometrie is goed automatisch te testen (vitest):
 
 | Fase | Inhoud | Klaar als… |
 |---|---|---|
-| **0. Prototype** | Tolerantie-testprint; handmatig 4×2-doosje met deksel, nop en klapgreep | Testprint werkt op de X1C; klik en nop voelen goed |
+| **0. Prototype** | Tolerantie-testprint ([test-prints/](../test-prints/README.md)); daarna een 4×2-doosje met deksel, nop en klapgreep | Testprint werkt op de X1C; klik en nop voelen goed |
 | **1. MVP-app** | Bak + deksel + noppen, maatkeuze, presets schotten, STL-export, waarschuwing als iets niet past | Je kunt een 4×4-doos in de app maken en printen |
 | **2. Sluiting & thema** | Klapgreep + emblemen (iconen, tekst, SVG), 3MF met kleuren | Mario-doos met gesloten deksel uit de app |
 | **3. Splitsen** | Verboden zones, verbindingen, plateindeling, montagehandleiding, maximale stukgrootte | 8×4-doos in 2 delen geprint op de X1C en gemonteerd; tests bewijzen dat elk stuk op elk profiel past |
@@ -416,7 +416,9 @@ Geometrie is goed automatisch te testen (vitest):
 
 **Nog open**
 
-Geen open ontwerpvragen meer. Volgende stap: fase 0, de tolerantie-testprint op de X1C (§13, §14).
+Geen open ontwerpvragen meer.
+
+**Status fase 0 (27-10-2026):** de tolerantie-testprint staat klaar in [test-prints/](../test-prints/README.md). Zodra de resultaten bekend zijn, gaan de gekozen toleranties naar `src/geometry/dimensions.ts`.
 
 ## 16. Risico's
 
